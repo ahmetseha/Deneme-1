@@ -130,6 +130,9 @@
     display: block;
     color: #fff;
   }
+  .navbar a{
+    color: #fff;
+  }
   .navbar .icons i{
     padding: 1rem;
     font-size: 24px;
