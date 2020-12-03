@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-widht {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar .max-widht {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .name a {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.navbar .name a span {
+  color: rgb(28, 150, 113);
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: rgb(28, 150, 113);
+}
+.navbar .icons{
+  display: none;
+}
+
+
+/* Home Section */
+
+.home {
+  display: flex;
+  background: url("PortfolyoImage1.png") no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+  margin: auto;
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+
+.home .home-content .text-2 {
+  font-size: 95px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+  color: rgb(28, 150, 113);
+  font-weight: 500;
+}
+
+.home .home-content a {
+  display: inline-block;
+  color: rgb(167, 151, 151);
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .navbar .max-widht ul li a{
+    display: none;
+  }
+  .navbar .icons{
+    display: block;
+    color: #fff;
+  }
+  .navbar .icons i{
+    padding: 1rem;
+    font-size: 24px;
+  }
+
+}
+@media (max-width: 650px) {
+  .navbar{
+    display: block;
+  }
+  .home .text-1,.text-2, .text-3{
+    display: none;
+  }
+}
